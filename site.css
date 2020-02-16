@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#ACCAE6, #E7ECF0) no-repeat;
+}
+
+.test {
+    border: 1px solid red;
+}
+
+.test1 {
+    border: 1px solid black;
+}
+
+.all-parent {
+    height: 100vh;
+    width: 100%;
+}
+
+.block1{
+    height: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.block2{
+    height: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-block {
+    display: flex;
+    width: 1140px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(142, 168, 192);
+}
+
+.sidebar-box {
+    width: 300px;
+    flex-shrink: 0;
+    /*определяет фактор сжатия flex-элемента*/
+    overflow: auto;
+}
+
+.content-box {
+    flex-basis: 840px;
+    flex-shrink: 1;
+}
+
+.sidebar-header,
+.content-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: #898D8E;
+}
+
+.highest-inf {
+    background-color: #EFF4F8;
+}
+
+.order-inf {
+    padding: 18px 25px 0px 25px;
+    /*сверху, справа, снизу, слева*/
+    display: flex;
+}
+
+.order-number {
+    color: #3D3E40;
+    font-size: 20px;
+    width: 50%;
+}
+
+.order-cost {
+    color: #898D8E;
+    font-size: 20px;
+    width: 50%;
+    text-align: right;
+}
+
+.currency {
+    font-size: 14px;
+}
+
+.short-inf {
+    padding-bottom: 20px;
+}
+
+.short-inf-item {
+    color: #898D8E;
+    font-size: 16px;
+    padding: 5px 0px 6px 25px;
+    /*сверху, справа, снизу, слева*/
+}
+
+.buttons-box {
+    padding: 3px 0px 10px 25px;
+    /*сверху, справа, снизу, слева*/
+    display: flex;
+}
+
+.button {
+    width: 45px;
+    height: 45px;
+}
+
+.truck-img-box {
+    width: 10%;
+}
+
+.truck-img-box:hover{
+    cursor: pointer;
+}
+
+.person-img-box {
+    width: 90%;
+}
+
+.person-img-box {
+    cursor: pointer;
+}
+
+.middle-inf {
+    border-top: 2px solid #D7DBE4;
+    border-bottom: 2px solid #D7DBE4;
+    font-size: 16px;
+}
+
+.middle-header {
+    color: #3D3E40;
+    font-size: 20px;
+    padding: 18px 0px 10px 25px;
+    /*сверху, справа, снизу, слева*/
+}
+
+hr {
+    border: 0.5px solid #898D8E;
+    margin: 0px 15px 0px 15px;
+    /*сверху, справа, снизу, слева*/
+}
+
+.detailed-inf-box {
+    display: flex;
+    padding: 12px 0px 20px 0px;
+    /*сверху, справа, снизу, слева*/
+}
+
+.left-detailed-inf {
+    width: 30%;
+    text-align: right;
+    padding-right: 12px;
+    color: #898D8E;
+}
+
+
+.right-detailed-inf {
+    width: 70%;
+    color: #3D3E40;
+}
+
+.lower-inf {
+    background-color: #F2F3F7;
+}
+
+.lower-header {
+    color: #3D3E40;
+    font-size: 20px;
+    width: 85%;
+    padding: 18px 0px 10px 25px;
+    /*сверху, справа, снизу, слева*/
+}
+
+.table-box {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 95%;
+    display: flex;
+    font-size: 16px;
+    color: #3D3E40;
+}
+
+.table-main-col {
+    width: 37%;
+}
+
+.table-main-col .col-header,
+.table-main-col .table-item,
+.table-col .col-header,
+.table-col .table-item {
+    display: flex;
+    align-items: center;
+}
+
+.col-header,
+.table-col .table-item {
+    justify-content: center;
+}
+
+.col-4 .table-item,
+.col-4 .col-header {
+    justify-content: flex-end;
+}
+
+.table-col {
+    width: 21%;
+}
+
+.col-header {
+    height: 30px;
+}
+
+.table-main-col .table-item,
+.table-main-col .col-header {
+    padding-left: 15px;
+}
+
+.table-item {
+    height: 44px;
+    background-color: white;
+}
+
+.col-header,
+.table-item {
+    border-top: 1.5px solid rgba(137, 141, 142, 0.3);
+}
+
+.expesial-tItem {
+    border-bottom: 1.5px solid rgba(137, 141, 142, 0.3);
+}
+
+.col-4 .table-item,
+.col-4 .col-header {
+    padding-right: 15px;
+}
+
+.left-tItem2,
+.right-tItem2 {
+    width: 50%;
+}
+
+.left-tItem {
+    text-align: right;
+    padding-right: 3px;
+    font-weight: bold;
+}
+
+form {
+    position: relative;
+    width: 97%;
+    margin: 0 auto;
+    border: 1px solid #ACCAE6
+}
+
+.search-string {
+    width: 75%;
+    /*height: 42px;*/
+    /*border: 1px solid #3D3E40;*/
+    border: none;
+    outline: none;
+    color: #3D3E40;
+    font-style: italic;
+}
+
+.submit-button,
+.reset-button {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 5px;
+    /*сверху, справа, снизу, слева*/
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.search-img,
+.refresh-img {
+    width: 13px;
+    height: 13px;
+}
+
+
+.list-item {
+    height: 100px;
+    border: 1px solid #D7DBE4;
+    border-right: none;
+}
+
+.list-item:hover{
+    background-color: #E7ECF0;
+    cursor: pointer;
+}
+
+.num-date-box,
+.name-status-box {
+    display: flex;
+}
+
+.num-date-box {
+    padding: 10px 10px 0 10px;
+    /*сверху, справа, снизу, слева*/
+    color: #3D3E40;
+    font-size: 20px;
+}
+
+.name-status-box {
+    padding: 0 10px 0 10px;
+}
+
+.shipped-date-sideb {
+    padding-bottom: 10px;
+    padding: 0 10px 0px 10px;
+    align-self: center;
+}
+
+.order-number-sideb,
+.date-sideb {
+    width: 50%;
+    align-self: center;
+}
+
+.cust-name-sideb {
+    width: 55%;
+    align-self: center;
+}
+
+.status-sideb {
+    width: 35%;
+    align-self: center;
+}
+
+.date-sideb,
+.status-sideb {
+    text-align: right;
+}
+
+.num-date-box {
+    height: 30%;
+}
+
+.name-status-box {
+    height: 25%;
+    color: #898D8E;
+}
+
+.shipped-date-sideb {
+    height: 40%;
+    color: #898D8E;
+}
+
+.red-status {
+    color: red;
+}
+
+.all-footers {
+    width: 1140px;
+    background-color: #2F3B47;
+    display: flex;
+    box-shadow: 0 0 10px rgb(142, 168, 192);
+}
+
+.left-footer-box {
+    width: 300px;
+    border-right: 1px solid #EFF4F8;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.left-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left-img-box1{
+width: 10%;
+}
+
+.left-img-box2{
+width: 10%;
+}
+
+.right-footer-box {
+    
+    flex-basis: 840px;
+    flex-shrink: 1;
+}
+
+.right-footer{
+    height: 100%;
+    flex-basis: 840px;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.right-img-box{
+    margin-right: 15px;
+}
+
+.footer-img {
+    width: 16px;
+    height: 16px;
+}
