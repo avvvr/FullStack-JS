@@ -49,6 +49,7 @@ body {
 .content-box {
     flex-basis: 840px;
     flex-shrink: 1;
+    overflow: auto;
 }
 
 .sidebar-header,
@@ -110,7 +111,8 @@ body {
 }
 
 .truck-img-box {
-    width: 10%;
+    width: 6%;
+
 }
 
 .truck-img-box:hover{
@@ -118,7 +120,8 @@ body {
 }
 
 .person-img-box {
-    width: 90%;
+    width: 94%;
+    margin-left: 40px;
 }
 
 .person-img-box {
@@ -283,9 +286,13 @@ form {
 .search-img,
 .refresh-img {
     width: 13px;
-    height: 13px;
+    height: 13px;0
 }
 
+.submit-button:hover,
+.reset-button:hover{
+    background-color: #D7DBE4;
+}
 
 .list-item {
     height: 100px;
@@ -383,10 +390,12 @@ form {
 
 .left-img-box1{
 width: 10%;
+cursor: pointer;
 }
 
 .left-img-box2{
 width: 10%;
+cursor: pointer;
 }
 
 .right-footer-box {
@@ -407,6 +416,7 @@ width: 10%;
 
 .right-img-box{
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .footer-img {
