@@ -20,13 +20,13 @@ body {
     width: 100%;
 }
 
-.block1{
+.block1 {
     height: 95%;
     display: flex;
     justify-content: center;
 }
 
-.block2{
+.block2 {
     height: 5%;
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@ body {
 
 }
 
-.truck-img-box:hover{
+.truck-img-box:hover {
     cursor: pointer;
 }
 
@@ -132,6 +132,7 @@ body {
     border-top: 2px solid #D7DBE4;
     border-bottom: 2px solid #D7DBE4;
     font-size: 16px;
+    background-color: white;
 }
 
 .middle-header {
@@ -286,11 +287,12 @@ form {
 .search-img,
 .refresh-img {
     width: 13px;
-    height: 13px;0
+    height: 13px;
+    0
 }
 
 .submit-button:hover,
-.reset-button:hover{
+.reset-button:hover {
     background-color: #D7DBE4;
 }
 
@@ -300,7 +302,7 @@ form {
     border-right: none;
 }
 
-.list-item:hover{
+.list-item:hover {
     background-color: #E7ECF0;
     cursor: pointer;
 }
@@ -388,23 +390,23 @@ form {
     align-items: center;
 }
 
-.left-img-box1{
-width: 10%;
-cursor: pointer;
+.left-img-box1 {
+    width: 10%;
+    cursor: pointer;
 }
 
-.left-img-box2{
-width: 10%;
-cursor: pointer;
+.left-img-box2 {
+    width: 10%;
+    cursor: pointer;
 }
 
 .right-footer-box {
-    
+
     flex-basis: 840px;
     flex-shrink: 1;
 }
 
-.right-footer{
+.right-footer {
     height: 100%;
     flex-basis: 840px;
     flex-shrink: 1;
@@ -414,7 +416,7 @@ cursor: pointer;
 }
 
 
-.right-img-box{
+.right-img-box {
     margin-right: 15px;
     cursor: pointer;
 }
@@ -422,4 +424,154 @@ cursor: pointer;
 .footer-img {
     width: 16px;
     height: 16px;
+}
+
+.all-parent-tablet {
+    display: none;
+}
+
+.all-parent-mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .all-parent-tablet {
+        display: block;
+        height: 100vh;
+    }
+
+    .all-parent {
+        display: none;
+    }
+
+    .content-box {
+        height: 95%;
+    }
+
+    .tablet-footer-box {
+        height: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #2F3B47;
+    }
+}
+
+@media (max-width: 576px) {
+    .all-parent-tablet {
+        display: none;
+    }
+
+    .all-parent-mobile {
+        display: block;
+    }
+
+    .buttons-box-mob {
+        display: flex;
+        padding: 10px 0px 10px 25px;
+        /*сверху, справа, снизу, слева*/
+    }
+
+    .truck-img-box-mob {
+        width: 20%;
+
+    }
+
+    .truck-img-box-mob:hover,
+    .person-img-box-mob {
+        cursor: pointer;
+    }
+
+    .person-img-box-mob {
+        width: 80%;
+    }
+
+    .middle-inf-mob {
+        background-color: white;
+        border-top: 2px solid #D7DBE4;
+        border-bottom: 2px solid #D7DBE4;
+    }
+
+    .middle-header-mob {
+        padding: 15px 0px 15px 25px;
+    }
+
+    .hr-mob {
+        margin: 0;
+    }
+
+    .detailed-inf-box-mob {
+        padding: 15px 0px 15px 25px;
+        /*сверху, справа, снизу, слева*/
+    }
+
+    .pair-items{
+        height: 50px;
+    }
+
+    .detailed-item-general,
+    .detailed-item-unique {
+        height: 20px;
+    }
+
+    .detailed-item-general{
+        color: #898D8E;
+    }
+
+    .detailed-item-unique{
+        color: #3D3E40;
+    }
+    
+    .table-mob{
+        background-color: white;
+    }
+
+    .lower-header-mob{
+        background-color: #EFF4F8;
+        font-size: 20px;
+        padding: 15px 0px 15px 25px;
+    }
+
+    .mob-table-header{
+        height: 30px;
+        padding-left: 25px;
+        color: #3D3E40;
+        border-top: 1px solid #898D8E;
+        border-bottom: 1px solid #898D8E;
+        background-color: #EFF4F8;
+        display: flex;
+        align-items: center;
+    }
+
+    .table-item-mob{
+        /*height: 250px;*/
+        padding-left: 25px;
+        border-bottom: 1px solid #898D8E;
+        color: rgb(127, 131, 133);
+        font-size: 15px;
+    }
+
+    .tItem-part-especial{
+        height: 27px;
+    }
+
+    .tItem-part{
+        height: 52px;
+    }
+
+    .item-name{
+        color: #3D3E40;
+    }
+
+    .smallest-tItem-part{
+        height: 46%;
+    }
+    
+    .mob-footer-box{
+        height: 35px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #2F3B47;
+    }
 }
